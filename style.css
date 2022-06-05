@@ -56,6 +56,22 @@ z-index: 0;
 
 }
 
+.btn{
+
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    display: inline-block;
+    white-space: nowrap;
+    color: white;
+    border-radius: 40px;
+    background: var(--text-black-700);
+    transition: all .3s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -207,7 +223,17 @@ z-index: 0;
     height: 400px;
 }
 
+h3.hello{
+    font-size: 28px;
+    margin: 0 15px;
+}
 
+
+.home-info p{
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
 
 
 
