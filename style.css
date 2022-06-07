@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Montserrat:wght@300&family=Roboto+Condensed&display=swap');
+:root{
+
+    --violet-light: rgb(238, 225, 236);
+    --violet-color: rgba(80,28,129,1);
+    --violet-regular:rgb(105, 69, 139); 
+}
 
 
 *{
@@ -51,15 +57,15 @@ nav{
     display: none;
 }
 .circles1{
-   
+   transform: rotate(180deg);
     height: auto;
-    left: 0;
+    right: 0;
     margin: 0;
     min-height: 100%;
     min-width: 674px;
     padding: 0;
     position: absolute;
-    top: 300px;
+    top: 70px;
     width: 100%;
     z-index: -1
 }
@@ -101,8 +107,8 @@ nav{
 
 .home button{
     margin-top: 30px;
-    background: rgb(80,28,129);
-    background: linear-gradient(33deg, rgba(80,28,129,1) 0%, rgba(195,193,193,1) 100%);
+    background: var(--violet-color);
+    background: linear-gradient(33deg, var(--violet-color) 0%, rgba(195,193,193,1) 100%);
     border-radius: 40px;
     padding: 10px;
     border: none;
@@ -115,7 +121,7 @@ nav{
 .home button:hover{
     transform: scale(1.05);
 
-    background: linear-gradient(0deg, rgba(195,193,193,1) 0%, rgba(80,28,129,1) 98%);
+    background: linear-gradient(0deg, rgba(195,193,193,1) 0%, var(--violet-color) 98%);
 }
 
 
@@ -126,7 +132,94 @@ ul{
 }
 
 
-.about{
+.offer-section{
+    height: 180vh;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--violet-color);
+    background-color: var(--violet-light);
+    border-top: 1px dashed grey;
+    border-bottom: 1px dashed grey;
+}
+
+.pause{
+     border: 0.5px dashed rgb(233, 225, 225);
+
+     width: 98vw;
+}
+
+.offer-section h1{
+    font-size: 35px;
+    margin: 25px 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    padding: 15px;
+}
+
+.offer h3{
+    font-family: 'Roboto condesed', sans-serif;
+}
+.offer p{
+    color: black;
+    font-family: sans-serif;
+}
+
+.offer-section img{
+    width: 300px;
+    border-radius: 40px;
+}
+
+
+.subjects-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
+}
+
+.subjects-section h1{
+    font-size: 35px;
+    margin: 25px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--violet-color);
+}
+
+.sub{
+    text-align: center;
+    line-height: 40px;
+    color: rgb(20, 20, 20);
+    border: 1px solid var(--violet-regular);
+    width: 90vw;
+    height: 40px;
+    margin: 5px 0;
+    font-size: 25px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.sub:hover{
+    background-color: var(--violet-color);
+    color: white;
+    
+}
+
+.polish-info{ 
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 85vw;
+    height: 280px;
+    border: 1px solid var(--violet-color);
+    text-align: center;
+    line-height: 30px;
 }
 
