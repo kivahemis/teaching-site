@@ -126,7 +126,6 @@ ul{
     height: 80vh;
     width: 100vw;
     margin-top: 200px;
-    border: 1px solid orange;
 
 }
 
@@ -151,6 +150,7 @@ ul{
     margin-right: 20px;
 }
 
+
 .about-me h3{
     font-size: 20px;
 }
@@ -171,11 +171,12 @@ ul{
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    z-index: -1;
 
 }
 
 .offer-section{
-    height: 180vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,7 +225,7 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .subjects-section h1, .price-section h1{
