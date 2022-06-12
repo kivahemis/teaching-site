@@ -238,4 +238,33 @@ ul{
 .price-section{
     height: 100vh;
     width: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: var(--violet-light); */
+}
+
+
+.price{
+    text-align: center;
+    height: 50%;
+    width: 80vw;
+    margin: 30px 0;
+    border-radius: 40px;
+    border: 1px solid var(--violet-color);
+    background: linear-gradient(270deg, var(--violet-light), var(--violet-regular));
+    line-height: 40px;
+}
+.price-single h5{
+    margin-bottom: 70px;
+}
+.price-multi{
+    margin-top: 25px;
+}
+.price h5{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.price h6{
+    font-size: 15px;
 }
