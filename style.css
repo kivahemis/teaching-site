@@ -105,18 +105,7 @@ nav{
 
 
 
-.home button{
-    margin-top: 30px;
-    background: var(--violet-color);
-    background: linear-gradient(33deg, var(--violet-color) 0%, rgba(195,193,193,1) 100%);
-    border-radius: 40px;
-    padding: 10px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    transition: all 0.4s ease;
-}
+
 
 .home button:hover{
     transform: scale(1.05);
@@ -132,9 +121,46 @@ ul{
 }
 
 
+
+.about-me{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    border: 1px solid orange;
+}
+
+.about-me p, h3{
+    margin: 30px;
+}
+
+.about-me img{
+    width: 250px;
+    height: 350px;
+    margin-right: 20px;
+}
+
+.about-me h3{
+    font-size: 20px;
+}
+
+.about-me button{
+    margin-top: 30px;
+    background: var(--violet-color);
+    background: linear-gradient(33deg, var(--violet-color) 0%, rgba(195,193,193,1) 100%);
+    border-radius: 40px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.4s ease;
+    flex
+}
+
 .offer-section{
     height: 180vh;
-    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,29 +267,32 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: var(--violet-light); */
+    background-color: var(--violet-light);
 }
-
 
 .price{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
     height: 50%;
-    width: 80vw;
+    width: 350px;
     margin: 30px 0;
     border-radius: 40px;
     border: 1px solid var(--violet-color);
-    background: linear-gradient(270deg, var(--violet-light), var(--violet-regular));
+    background: linear-gradient(100deg, var(--violet-color), var(--violet-regular));
     line-height: 40px;
+    color: white;
 }
-.price-single h5{
-    margin-bottom: 70px;
+.price-section p{
+    font-family: sans-serif;
+    font-size: 18px;
 }
+
 .price-multi{
     margin-top: 25px;
 }
 .price h5{
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 25px;
 }
 .price h6{
     font-size: 15px;
