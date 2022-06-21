@@ -242,6 +242,28 @@ nav li:hover{
     width: 80%;
 }
 
-.subjects{
-    height: 100vh;
+.subjects .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.sub-right-col, .sub-left-col{
+    align-items: flex-start;
+    flex-basis: 50%;
+ 
+}
+.sub-left-col{
+    max-width: 500px;
+}
+
+.sub-right-col img{
+    width: 100%;
+
+}
+
+.subjects{
+    margin-top: 150px;
+}
+
+
